@@ -11,6 +11,9 @@
 		0EC949772A2FA11800EA8BA2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC949762A2FA11800EA8BA2 /* ContentView.swift */; };
 		0EC949792A2FA11900EA8BA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EC949782A2FA11900EA8BA2 /* Assets.xcassets */; };
 		0EC9497C2A2FA11900EA8BA2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EC9497B2A2FA11900EA8BA2 /* Preview Assets.xcassets */; };
+		0EC949842A2FA12B00EA8BA2 /* Strategies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC949832A2FA12B00EA8BA2 /* Strategies.swift */; };
+		0EC949872A2FC42700EA8BA2 /* SigmaSwiftStatistics in Frameworks */ = {isa = PBXBuildFile; productRef = 0EC949862A2FC42700EA8BA2 /* SigmaSwiftStatistics */; };
+		0EC949892A2FD58100EA8BA2 /* Measurements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC949882A2FD58100EA8BA2 /* Measurements.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +23,8 @@
 		0EC949782A2FA11900EA8BA2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0EC9497B2A2FA11900EA8BA2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0EC9497D2A2FA11900EA8BA2 /* DataPushPerformance.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DataPushPerformance.entitlements; sourceTree = "<group>"; };
+		0EC949832A2FA12B00EA8BA2 /* Strategies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strategies.swift; sourceTree = "<group>"; };
+		0EC949882A2FD58100EA8BA2 /* Measurements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Measurements.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EC949872A2FC42700EA8BA2 /* SigmaSwiftStatistics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +60,8 @@
 			children = (
 				0EC949742A2FA11800EA8BA2 /* DataPushPerformanceApp.swift */,
 				0EC949762A2FA11800EA8BA2 /* ContentView.swift */,
+				0EC949882A2FD58100EA8BA2 /* Measurements.swift */,
+				0EC949832A2FA12B00EA8BA2 /* Strategies.swift */,
 				0EC949782A2FA11900EA8BA2 /* Assets.xcassets */,
 				0EC9497D2A2FA11900EA8BA2 /* DataPushPerformance.entitlements */,
 				0EC9497A2A2FA11900EA8BA2 /* Preview Content */,
@@ -85,6 +93,9 @@
 			dependencies = (
 			);
 			name = DataPushPerformance;
+			packageProductDependencies = (
+				0EC949862A2FC42700EA8BA2 /* SigmaSwiftStatistics */,
+			);
 			productName = DataPushPerformance;
 			productReference = 0EC949712A2FA11800EA8BA2 /* DataPushPerformance.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +124,9 @@
 				Base,
 			);
 			mainGroup = 0EC949682A2FA11800EA8BA2;
+			packageReferences = (
+				0EC949852A2FC42700EA8BA2 /* XCRemoteSwiftPackageReference "SigmaSwiftStatistics" */,
+			);
 			productRefGroup = 0EC949722A2FA11800EA8BA2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,7 +153,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EC949842A2FA12B00EA8BA2 /* Strategies.swift in Sources */,
 				0EC949772A2FA11800EA8BA2 /* ContentView.swift in Sources */,
+				0EC949892A2FD58100EA8BA2 /* Measurements.swift in Sources */,
 				0EC949752A2FA11800EA8BA2 /* DataPushPerformanceApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -336,6 +352,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0EC949852A2FC42700EA8BA2 /* XCRemoteSwiftPackageReference "SigmaSwiftStatistics" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/evgenyneu/SigmaSwiftStatistics";
+			requirement = {
+				kind = exactVersion;
+				version = 9.0.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0EC949862A2FC42700EA8BA2 /* SigmaSwiftStatistics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0EC949852A2FC42700EA8BA2 /* XCRemoteSwiftPackageReference "SigmaSwiftStatistics" */;
+			productName = SigmaSwiftStatistics;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0EC949692A2FA11800EA8BA2 /* Project object */;
 }
